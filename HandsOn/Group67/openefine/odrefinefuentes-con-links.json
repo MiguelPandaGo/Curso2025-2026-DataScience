@@ -1,0 +1,2051 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+              "curie": "geo:alt",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COORD_GIS_X",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+              "curie": "geo:alt",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COORD_GIS_Y",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column DISTRITO to type Q3032114"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "neighborhood of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "BARRIO: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/es/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q10267336",
+        "name": "barrio administrativo de Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "DISTRITO",
+          "propertyName": "situado en la entidad territorial administrativa",
+          "propertyID": "P131"
+        }
+      ],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column BARRIO to type Q10267336"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "BARRIO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "BARRIO",
+          "from": 27,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO HISTORICO DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Casco Histórico de Vallecas (Q16544370) para las celdas que contienen \"CASCO HISTORICO DE VALLECAS\" en la columna BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "BARRIO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "BARRIO",
+          "from": 27,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO HISTORICO DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Casco Histórico de Vallecas (Q16544370) para las celdas que contienen \"CASCO HISTORICO DE VALLECAS\" en la columna BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "BARRIO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "BARRIO",
+          "from": 27,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO HISTORICO DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Casco Histórico de Vallecas (Q16544370) para las celdas que contienen \"CASCO HISTORICO DE VALLECAS\" en la columna BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "BARRIO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "BARRIO",
+          "from": 27,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO HISTORICO DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "Q16544370",
+      "name": "Casco Histórico de Vallecas",
+      "types": [
+        "Q10267336"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Casco Histórico de Vallecas (Q16544370) para las celdas que contienen \"CASCO HISTORICO DE VALLECAS\" en la columna BARRIO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "BARRIO: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "BARRIO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "BARRIO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "BARRIO",
+          "from": 27,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PILAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q126053879",
+      "name": "Pilar",
+      "types": [
+        ""
+      ],
+      "score": 35.714285714285715
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pilar (Q126053879) para las celdas que contienen \"PILAR\" en la columna BARRIO"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "dcterms",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://group67.linkeddata.es/resource/fuente/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"http://group67.linkeddata.es/resource/fuente/\" + cells[\"ID\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/identifier",
+              "curie": "dcterms:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ID",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DESC_CLASIFICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "BARRIO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/containedInPlace",
+              "curie": "schema:containedInPlace",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "columnName": "DISTRITO",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://schema.org/additionalProperty",
+              "curie": "schema:additionalProperty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "ESTADO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+              "curie": "rdfs:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "SISTEMA_COORD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "TIPO_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/address",
+              "curie": "schema:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NOM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NUM_VIA",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/postalCode",
+              "curie": "schema:postalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "COD_POSTAL",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/addressLocality",
+              "curie": "schema:addressLocality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "DIRECCION_AUX",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "NDP",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/dateCreated",
+              "curie": "schema:dateCreated",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "FECHA_INSTALACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CODIGO_INTERNO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/identifier",
+              "curie": "schema:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "CONTRATO_COD",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "UBICACION",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/usageInfo",
+              "curie": "schema:usageInfo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "USO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "MODELO",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://schema.org/geo",
+              "curie": "schema:geo",
+              "target": {
+                "nodeType": "cell-as-blank",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                    "curie": "geo:lat",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LATITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                    "curie": "geo:long",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "LONGITUD",
+                      "expression": "value",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Place",
+              "curie": "schema:Place"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIOID",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna BARRIOID en el índice 4 basada en la columna BARRIO usando la expresión cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DISTRITO",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "DISTRITOID",
+    "columnInsertIndex": 7,
+    "description": "Crear la columna DISTRITOID en el índice 7 basada en la columna DISTRITO usando la expresión if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BARRIOID",
+    "description": "Eliminar columna BARRIOID"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "BARRIO",
+    "expression": "cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "BARRIOID",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna BARRIOID en el índice 4 basada en la columna BARRIO usando la expresión cell.recon.match.id"
+  }
+]
